@@ -1,0 +1,29 @@
+#contoh 4.1 demam/tidak?
+suhu = int(input("Silahkan masukkan suhu anda\n>> "))
+if suhu > 38:
+    print ("Tubuh anda demam")
+elif suhu > 37.5:
+    print("Tubuh anda hangat")
+else:
+    print("Suhu tubuh anda normal")
+
+#aturan yg salah
+suhu = int(input("Silahkan masukkan suhu anda\n>> "))
+if suhu > 37.5:
+    print ("Tubuh anda hangat")
+elif suhu > 38:
+    print("Tubuh anda demam")
+else:
+    print("Suhu tubuh anda normal")
+
+#try-except
+suhu = int(input("Silahkan masukkan suhu anda\n>> "))
+try :
+    if suhu > 37.5 and suhu <= 38:
+        print ("Tubuh anda hangat")
+    elif suhu > 38:
+        print("Tubuh anda demam")
+    else:
+        print("Suhu tubuh anda normal")
+excpet:
+    print("Suhu harus berbentuk angka")
